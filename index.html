@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <!-- load in the p5 core library -->
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.7.0/lib/p5.js"></script>
+
+    <!-- load in the p5 sound library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/addons/p5.sound.js"></script>
+
+    <!-- custom CSS styles for this page -->
+    <style>
+      body {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: white;
+        background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      h2 {
+        font-size: 12pt;
+      }
+
+      /* Centering the content */
+      .content {
+        width: 600px;
+        text-align: left;
+        margin-top: 20px;
+      }
+
+      /* Centering the canvas */
+      .game-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      /* Canvas styling */
+      canvas {
+        display: block;
+        margin: 0 auto;
+        border: 2px solid white;
+        margin-bottom:100px;
+      }
+    </style>
+    <!-- your custom sketch code -->
+    <script src="sketch.js"></script>
+
+  </head>
+  <body>
+    <div class="content">
+      <h1> Breakout!</h1>
+      <h2> Created By: Juno Cheung</h2>
+      <p id="description"> Breakout! is a fast-paced arcade-style game where quick reflexes and sharp hand-eye coordination are key! 
+        Take control of a paddle as you bounce a colorful ball and chase after shiny treasures floating across the screen. 
+        But beware—missing the ball will cost you your score and send you back to square one! Collect treasures to rack up 
+        points and watch the colors of your ball shift and swirl as you keep it in play. How many points can you collect before missing your shot?</p>
+      <h3>Instructions:</h3>
+      <p>Objective:</p>
+      <ul>
+        <li>Keep the ball bouncing using your paddle, avoid letting it fall off the bottom of the screen, and collect as many treasures as you can to increase your score.</li>
+      </ul>
+      <p>Controls:</p>
+      <ul>
+        <li>Move Paddle: Use the A key to move left and the D key to move right.</li>
+        <li>Start the Game: Click the mouse to launch the ball.</li>
+      </ul>
+      <p>Gameplay:</p>
+      <ul>
+        <li>Once the game starts, the ball will bounce around the screen. Use your paddle to keep it in play by deflecting it back up.</li>
+        <li>Collect treasures by colliding the ball with them—each one is worth 1 point!</li>
+        <li>Treasures will randomly appear on opposite sides of the screen and move diagonally. Keep an eye on their movement!</li>
+        <li>The longer you keep the ball in play, the faster it may bounce, adding to the challenge!</li>
+      </ul>
+      <p>End Game:</p>
+      <ul>
+        <li>If the ball falls below your paddle and misses, your score will reset to zero, and you'll have to start over from the top. Good luck!</li>
+      </ul>
+    </div>
+
+    <div class ="game-container">
+
+    </div>
+  </body>
+</html>

@@ -41,14 +41,14 @@ let score = 0;
 
 //load in graphical and sound assets
 function preload() {
-    treasureArtwork = loadImage("../assignment02/images/treasure.png");
-    backgroundArtwork = loadImage("../assignment02/images/background.png");
-    foregroundArtwork = loadImage("../assignment02/images/foreground.png");
+    treasureArtwork = loadImage("images/treasure.png");
+    backgroundArtwork = loadImage("images/background.png");
+    foregroundArtwork = loadImage("images/foreground.png");
 
     //sounds
-    boingSound = loadSound("../assignment02/sounds/boing.mp3");
-    collectSound = loadSound("../assignment02/sounds/collect.mp3");
-    lossSound = loadSound("../assignment02/sounds/loss.mp3");
+    boingSound = loadSound("sounds/boing.mp3");
+    collectSound = loadSound("sounds/collect.mp3");
+    lossSound = loadSound("sounds/loss.mp3");
 
 }
 
